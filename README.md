@@ -24,6 +24,8 @@ List of features ready and TODOs for future development
 To-do list:
 * Encrypted password on database.
 * Forget-password will able to send email confirmation and reset password from user.
+* As employee, user can upload the reimbursement reciept when create ticket.
+* As manager, user can download and view the reciept.
 
 ## Getting Started
 * First we need to git clone the project
