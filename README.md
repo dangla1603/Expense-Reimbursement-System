@@ -50,7 +50,6 @@ To-do list:
 ![manager](https://user-images.githubusercontent.com/43182305/115806587-abfb2f00-a3ac-11eb-8225-680be2a3a2ad.PNG)
 
 * After finish doing reimbursement, you can hit " log out " button on top left corner, it will exist your account and redirect back to log in page.
-* 
 ## License
 
 This project uses the following license: [<license_name>](<link>).
