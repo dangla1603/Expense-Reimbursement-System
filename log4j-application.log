@@ -1,0 +1,23 @@
+2021-03-30 10:55:18 ERROR UserDAOImpl:140 - org.postgresql.util.PSQLException: Bad value for type int : dangla
+2021-03-30 10:55:18 ERROR UserDAOImpl:140 - org.postgresql.util.PSQLException: Bad value for type int : dangla
+2021-03-30 14:34:51 ERROR UserDAOImpl:185 - org.postgresql.util.PSQLException: ERROR: syntax error at or near "LEFT"
+  Position: 1
+2021-03-30 15:24:33 ERROR UserDAOImpl:194 - org.postgresql.util.PSQLException: The column index is out of range: 20, number of columns: 11.
+2021-03-30 15:28:14 ERROR UserDAOImpl:194 - org.postgresql.util.PSQLException: The column index is out of range: 13, number of columns: 11.
+2021-03-30 15:28:34 ERROR UserDAOImpl:194 - org.postgresql.util.PSQLException: The column index is out of range: 13, number of columns: 11.
+2021-03-31 20:39:09 ERROR UserDAOImpl:49 - org.postgresql.util.PSQLException: ERROR: null value in column "user_last_name" violates not-null constraint
+  Detail: Failing row contains (3, ladang, la, la, null, ladang1603@yahoo.com, 1).
+2021-03-31 20:42:56 ERROR UserDAOImpl:49 - org.postgresql.util.PSQLException: ERROR: null value in column "user_last_name" violates not-null constraint
+  Detail: Failing row contains (4, ladang, la, la, null, ladang@yahoo.com, 1).
+2021-03-31 20:45:41 ERROR UserDAOImpl:49 - org.postgresql.util.PSQLException: ERROR: null value in column "user_last_name" violates not-null constraint
+  Detail: Failing row contains (5, ladang, pass, la, null, ladang@yahoo.com, 1).
+2021-03-31 20:47:29 ERROR UserDAOImpl:49 - org.postgresql.util.PSQLException: ERROR: null value in column "user_last_name" violates not-null constraint
+  Detail: Failing row contains (6, ladang, password, la, null, ladang@yahoo.com, 1).
+2021-03-31 20:51:38 ERROR UserDAOImpl:49 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "ers_users_ers_username_key"
+  Detail: Key (ers_username)=(ladang) already exists.
+2021-04-01 22:11:13 ERROR UserDAOImpl:45 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "ers_reimbursement_pkey"
+  Detail: Key (reimb_id)=(1) already exists.
+2021-04-01 22:29:52 ERROR UserDAOImpl:53 - org.postgresql.util.PSQLException: ERROR: insert or update on table "ers_users" violates foreign key constraint "ers_users_user_role_id_fkey"
+  Detail: Key (user_role_id)=(1) is not present in table "user_roles".
+2021-04-01 22:30:59 ERROR UserDAOImpl:53 - org.postgresql.util.PSQLException: ERROR: insert or update on table "ers_users" violates foreign key constraint "ers_users_user_role_id_fkey"
+  Detail: Key (user_role_id)=(1) is not present in table "user_roles".

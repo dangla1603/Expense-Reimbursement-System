@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dao.UserDAOImplTest" tests="3" skipped="1" failures="0" errors="0" timestamp="2021-04-02T15:56:49" hostname="DESKTOP-3SNEEE5" time="0.367">
+  <properties/>
+  <testcase name="checkLogin()" classname="dao.UserDAOImplTest" time="0.308"/>
+  <testcase name="createUser()" classname="dao.UserDAOImplTest" time="0.056"/>
+  <testcase name="deleteUser()" classname="dao.UserDAOImplTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[
+User{username='dangla', password='la', firstName='dang', lastName='la', userEmail='dangla@yahoo.com', roleId=1, userId=1}
+Successfully added new user!!!!!!!!!!!!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

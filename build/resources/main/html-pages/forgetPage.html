@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+    <!--styles -->
+    <link rel="stylesheet" type="text/css" href="newStyle.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+<body>
+<div class="title">Welcome to Dang Company App</div>
+<form id="login-form" class="form-background" method ="Post" action = "/register" >
+    <div class="mb-3">
+        <label for="inputEmail" class="form-label">Your Email</label>
+        <input id="inputEmail" type="text" placeholder="Enter your Email" class="form-control" name="thatLostEmail" >
+    </div>
+    <div class="mb-3">
+        <label for="inputNewPassword" class="form-label">New Password</label>
+        <input id="inputNewPassword" type="password" placeholder="Enter New Password" class="form-control" name="recoverNewPassword" >
+    </div>
+    <br><br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button id="recovery" class="btn btn-primary" type="button">Submit</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Come on! Here we are keeping your secret ! </p>
+            <p>Hint: Ask our Trevin &#x263A;</p>
+        </div>
+
+    </div>
+</form>
+
+<footer>
+    <p>&#169 Author: Dang La<br>
+        <a href="mailto:dang.la@revature.net">dang.la@revature.net</a></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/JavaScript" src ="funModal.js"></script>
+</body>
+
+</html>

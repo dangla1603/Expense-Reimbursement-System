@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <script type = "text/javascript" >
+      function preventBack(){window.history.forward();}
+       setTimeout("preventBack()", 0);
+       window.onunload=function(){null};
+   </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">Reimbursement Menu</a>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                 <form id = "logout">
+                    <button class="btn btn-primary" id="logout-btn">Logout</button>
+                </form> 
+
+                <!--  <button>
+                  <a href ="/index.html">Logout</a>
+                </button> -->
+                
+
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <div class="body">
+        <div class="center bgblack">
+            <div>
+                <h1 id="userHeader" class ="userName">Welcome User!!!</h1>
+                <h2 id="userHeader2" class ="userName2">To Employee Dashboard!!!</h2>
+            </div>
+            <div class="overflow">
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Searching..." title="Type in a name">
+                <table id ="reimbTable" class="table userName">
+              <thead>
+                <tr>
+                  <th scope="col" onclick="sortTable()" >#</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Submission</th>
+                  <th scope="col">Resolver</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id = "reimbursementList">
+              </tbody>
+            </table>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <form action = "http://localhost:9060/reimTicket.html">
+                <button id ="newTicket" class="btn btn-primary" type="submit">Create new reimbursement ticket</button>
+              </form>
+              
+            </div>
+          
+        </div>
+          
+    </div>
+
+    <script type="text/JavaScript" src ="employee.js"></script>
+    <script type="text/JavaScript" src ="sorting.js"></script>
+    <!--<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>-->
+
+</body>
+</html>
